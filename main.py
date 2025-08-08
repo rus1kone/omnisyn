@@ -264,7 +264,7 @@ async def unlock_from_main_menu(message: types.Message):
 
     kb = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="📅 7 дней — 1.49€", callback_data="sub_week")],
-        [InlineKeyboardButton(text="📆 30 дней — 3.49€", callback_data="sub_month")],
+        [InlineKeyboardButton(text="📆 30 дней — 3.99€", callback_data="sub_month")],
         [InlineKeyboardButton(text="♾️ Пожизненно — 9.99€", callback_data="sub_lifetime")]
     ])
 
@@ -326,7 +326,7 @@ async def handle_subscription(callback: CallbackQuery):
             "url": "https://buy.stripe.com/3cI28t64b42W8u82XR57W00"
         },
         "sub_month": {
-            "title": "30 дней за 3.49€",
+            "title": "30 дней за 3.99€",
             "url": "https://buy.stripe.com/bJeaEZ8cj6b4aCg1TN57W01"
         },
         "sub_lifetime": {
