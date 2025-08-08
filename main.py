@@ -379,9 +379,9 @@ async def go_back_to_subscription(callback: CallbackQuery):
     )
 
     kb = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="📅 7 дней — 2.99€", callback_data="sub_week")],
-        [InlineKeyboardButton(text="📆 30 дней — 7.99€", callback_data="sub_month")],
-        [InlineKeyboardButton(text="♾️ Пожизненно — 24.99€", callback_data="sub_lifetime")]
+        [InlineKeyboardButton(text="📅 7 дней — 1.49€", callback_data="sub_week")],
+        [InlineKeyboardButton(text="📆 30 дней — 3.99€", callback_data="sub_month")],
+        [InlineKeyboardButton(text="♾️ Пожизненно — 9.99€", callback_data="sub_lifetime")]
     ])
 
     await callback.message.edit_text(text, reply_markup=kb, parse_mode="Markdown")
